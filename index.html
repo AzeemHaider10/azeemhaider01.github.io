@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azeem Haider | Electrical Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+    *{ margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; scroll-behavior:smooth; }
+    body{ background:#050505; color:white; overflow-x:hidden; }
+    body::before{ content:''; position:fixed; width:500px; height:500px; background:#d8ff1e15; border-radius:50%; top:-200px; left:-150px; filter:blur(120px); z-index:-1; }
+    a{ text-decoration:none; color:white; }
+    nav{ width:100%; position:fixed; top:0; z-index:999; padding:20px 8%; display:flex; justify-content:space-between; align-items:center; background:rgba(0,0,0,0.7); backdrop-filter:blur(12px); border-bottom:1px solid #1a1a1a; }
+    .logo{ display:flex; align-items:center; gap:12px; color:#d8ff1e; font-size:25px; font-weight:700; }
+    .logo i{ width:50px; height:50px; border-radius:50%; background:#d8ff1e; color:black; display:flex; justify-content:center; align-items:center; }
+    .nav-links{ display:flex; gap:30px; }
+    .nav-links a{ font-weight:500; transition:0.3s; }
+    .nav-links a:hover{ color:#d8ff1e; }
+    .cv-btn{ background:#d8ff1e; color:black; padding:14px 28px; border-radius:40px; font-weight:700; transition:0.3s; }
+    .cv-btn:hover{ transform:translateY(-5px); }
+    section{ min-height:100vh; padding:130px 8% 80px; }
+    .hero{ display:flex; justify-content:space-between; align-items:center; gap:50px; flex-wrap:wrap; }
+    .hero-left{ flex:1; min-width:320px; }
+    .hero-left h5{ color:#d8ff1e; letter-spacing:4px; margin-bottom:20px; }
+    .hero-left h1{ font-size:68px; line-height:1.1; margin-bottom:20px; font-weight:800; }
+    .hero-left span{ color:#d8ff1e; }
+    .hero-left p{ color:#d0d0d0; line-height:1.9; max-width:650px; margin-bottom:35px; }
+    .hero-buttons{ display:flex; gap:20px; flex-wrap:wrap; margin-top:30px; }
+    .btn{ padding:15px 30px; border-radius:50px; font-weight:700; transition:0.3s; }
+    .btn-primary{ background:#d8ff1e; color:black; }
+    .btn-secondary{ border:2px solid #d8ff1e; color:#d8ff1e; }
+    .btn:hover{ transform:translateY(-5px); }
+    .hero-right{ flex:1; display:flex; justify-content:center; position:relative; min-width:320px; }
+    .hero-image{ width:500px; height:500px; border-radius:50%; padding:12px; background:linear-gradient(135deg,#d8ff1e,#8fa800,#d8ff1e); box-shadow:0 0 60px rgba(216,255,30,0.2); animation:float 4s ease-in-out infinite; }
+    .hero-image img{ width:100%; height:100%; object-fit:cover; border-radius:50%; border:8px solid #080808; }
+    @keyframes float{ 0%{transform:translateY(0px);} 50%{transform:translateY(-15px);} 100%{transform:translateY(0px);} }
+    .section-title{ text-align:center; margin-bottom:70px; }
+    .section-title h2{ font-size:55px; margin-bottom:15px; }
+    .section-title p{ color:#cfcfcf; }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
+    .card{ background:#0d0d0d; border:1px solid #1e1e1e; border-radius:25px; overflow:hidden; transition:0.4s; }
+    .card:hover{ transform:translateY(-10px); border-color:#d8ff1e; box-shadow:0 0 30px rgba(216,255,30,0.1); }
+    .card img{ width:100%; height:230px; object-fit:cover; }
+    .card-content{ padding:25px; }
+    .card-content h3{ margin-bottom:12px; font-size:25px; }
+    .card-content p{ color:#d0d0d0; line-height:1.8; }
+    .icon-box{ width:80px; height:80px; background:#d8ff1e; color:black; border-radius:20px; display:flex; justify-content:center; align-items:center; font-size:30px; margin-bottom:25px; }
+    .contact{ text-align:center; }
+    .contact h2{ font-size:55px; margin-bottom:20px; }
+    .contact p{ color:#d0d0d0; margin-bottom:35px; }
+    footer{ text-align:center; padding:30px; border-top:1px solid #151515; color:#a9a9a9; }
+    @media(max-width:950px){
+      .hero{ flex-direction:column-reverse; text-align:center; }
+      .hero-buttons{ justify-content:center; }
+      .hero-left h1{ font-size:48px; }
+      .hero-image{ width:370px; height:370px; }
+      .nav-links{ display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">
+    <i class="fa-solid fa-bolt"></i>
+    Azeem Portfolio
+  </div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#services">Services</a>
+  </div>
+  <a href="cv.pdf" target="_blank" class="cv-btn" style="margin-left:15px;">Download CV</a>
+</nav>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about">
+
+  <!-- Hero Row: Text + Image -->
+  <div style="display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
+
+    <!-- Text LEFT -->
+    <div style="flex:1; min-width:280px;">
+      <h5 style="color:#d8ff1e; letter-spacing:4px; margin-bottom:20px;">WELCOME TO MY PORTFOLIO</h5>
+      <h1 style="font-size:68px; line-height:1.1; margin-bottom:20px; font-weight:800;">
+        Hi, I'm <span style="color:#d8ff1e;">Azeem Haider</span><br>Electrical Engineer
+      </h1>
+      <p style="color:#d0d0d0; line-height:1.9; max-width:600px; margin-bottom:35px;">
+        Passionate Electrical Engineering student focused on Embedded Systems,
+        IoT, PCB Designing, Automation and Smart Electronics Projects.
+        I enjoy building innovative hardware and software solutions that solve real world problems.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Image RIGHT -->
+    <div style="flex-shrink:0;">
+      <div style="width:400px; height:400px; border-radius:50%; border:8px solid #bbf246; overflow:hidden; display:flex; justify-content:center; align-items:center;">
+        <img src="a.png" alt="Azeem Haider" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION inside about -->
+  <div id="education" style="margin-top:80px;">
+    <div class="section-title">
+      <h2>Education</h2>
+      <p>My Academic Journey</p>
+    </div>
+    <div style="display:grid; ">
+
+      <div class="card" onclick="openEdu1()" style="cursor:pointer;">
+        <div class="card-content">
+          <h3>Matriculation (SSC)</h3>
+          <p style="color:#bbf246; font-weight:500; margin:5px 0;">Saleem Nawaz Fazaia College Pakistan Air Force Base Masroor-13</p>
+          <p style="margin:5px 0; color:#aaa;">2021 — 2023</p>
+          <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:14px; border-top:1px solid #333; padding-top:10px;">View Details &rarr;</div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openEdu2()" style="cursor:pointer; grid-column:1/-1;">
+        <div class="card-content">
+          <h3>FSc (Pre-Engineering)</h3>
+          <p style="color:#bbf246; font-weight:500; margin:5px 0;">Madrasa-Tul-Banat College Sadikabad, District Rahim Yar Khan</p>
+          <p style="margin:5px 0; color:#aaa;">2023 — 2025</p>
+          <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:14px; border-top:1px solid #333; padding-top:10px;">View Details &rarr;</div>
+        </div>
+      </div>
+
+      <div class="card" onclick="openEdu3()" style="cursor:pointer; grid-column:1/-1;">
+        <div class="card-content">
+          <h3>Bachelor of Engineering</h3>
+          <p style="color:#bbf246; font-weight:500; margin:5px 0;">Khawaja Fareed University Of Engineering & Information Technology (KFUEIT) - Rahim Yar Khan</p>
+          <p style="margin:5px 0; color:#aaa;">2025 — Present</p>
+          <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:14px; border-top:1px solid #333; padding-top:10px;">View Details &rarr;</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- ===== END ABOUT SECTION ===== -->
+
+<!-- EDU OVERLAY 1 -->
+<div id="eduOverlay1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeEdu1()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 5px; color:#fff;">Matriculation (SSC)</h2>
+      <p style="color:#aaa; margin:0 0 20px;">2021 — 2023</p>
+      <div style="padding:15px; background:#0f3460; border-radius:8px; margin-bottom:20px;">
+        <p style="margin:0; color:#ccc;"><strong>School:</strong> Saleem Nawaz Fazaia College Pakistan Air Force Base Masroor-13</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Board:</strong> FBISE - Islamabad</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Marks:</strong> 1000 / 1100</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Grade:</strong> A+</p>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">What I Learned</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Mathematics & Physics fundamentals</li>
+        <li>Basic Computer Science concepts</li>
+        <li>Chemistry basics</li>
+        <li>English language and communication</li>
+        <li>Leadership Skills</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Hobbies & Activities</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Participated in science exhibitions</li>
+        <li>Member of Student Council as House Captain</li>
+        <li>Interested in electronics</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- EDU OVERLAY 2 -->
+<div id="eduOverlay2" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeEdu2()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 5px; color:#fff;">FSc (Pre-Engineering)</h2>
+      <p style="color:#aaa; margin:0 0 20px;">2023 — 2025</p>
+      <div style="padding:15px; background:#0f3460; border-radius:8px; margin-bottom:20px;">
+        <p style="margin:0; color:#ccc;"><strong>College:</strong> Madrasa-Tul-Banat College Sadikabad, District Rahim Yar Khan</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Board:</strong> BISE Bahawalpur</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Marks:</strong> 1061 / 1200</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Grade:</strong> A</p>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">What I Learned</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Advanced Mathematics and Calculus</li>
+        <li>Physics with practical lab work</li>
+        <li>Chemistry with experiments</li>
+        <li>English and communication skills</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Hobbies & Activities</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Built first electronics circuit projects</li>
+        <li>Participated in college competitions</li>
+        <li>Enhanced analytical thinking & problem-solving abilities</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- EDU OVERLAY 3 -->
+<div id="eduOverlay3" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeEdu3()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 5px; color:#fff;">Bachelor of Engineering (Electrical)</h2>
+      <p style="color:#aaa; margin:0 0 20px;">2025 — Present</p>
+      <div style="padding:15px; background:#0f3460; border-radius:8px; margin-bottom:20px;">
+        <p style="margin:0; color:#ccc;"><strong>University:</strong> Khawaja Fareed University Of Engineering & Information Technology (KFUEIT) - Rahim Yar Khan</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Specialization:</strong> Power & Electronics</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Current CGPA:</strong> 3.89 / 4.0</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Status:</strong> In Progress</p>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">What I Learned</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Embedded Systems and Microcontrollers</li>
+        <li>Circuit Design and PCB Layout</li>
+        <li>IoT and Smart Electronics</li>
+        <li>C / C++ and Python Programming</li>
+        <li>Digital and Analog Electronics</li>
+        <li>Power & Control Systems</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Hobbies & Activities</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>IEEE Student Member</li>
+        <li>Building real-world hardware projects</li>
+        <li>Participating in various competitions</li>
+        <li>Learning new technologies independently</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openEdu1(){ document.getElementById('eduOverlay1').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeEdu1(){ document.getElementById('eduOverlay1').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('eduOverlay1').addEventListener('click',function(e){ if(e.target===this) closeEdu1(); });
+  function openEdu2(){ document.getElementById('eduOverlay2').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeEdu2(){ document.getElementById('eduOverlay2').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('eduOverlay2').addEventListener('click',function(e){ if(e.target===this) closeEdu2(); });
+  function openEdu3(){ document.getElementById('eduOverlay3').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeEdu3(){ document.getElementById('eduOverlay3').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('eduOverlay3').addEventListener('click',function(e){ if(e.target===this) closeEdu3(); });
+</script>
+
+
+<!-- ===== CERTIFICATES SECTION ===== -->
+<section id="certificates">
+  <div class="section-title">
+    <h2>My Certificates</h2>
+    <p>Professional Courses & Achievements</p>
+  </div>
+  <div class="grid">
+    <div class="card" onclick="openCert1()" style="cursor:pointer;">
+      <div class="card-content">
+        <h3>IEEE Membership</h3>
+        <p>Recognized as a Student member in IEEE</p>
+        <div style="text-align:right; margin-top:15px; color:#bbf246; font-size:18px; border-top:1px solid #333; padding-top:10px;">&#10230;</div>
+      </div>
+    </div>
+    <div class="card" onclick="openCert2()" style="cursor:pointer;">
+      <div class="card-content">
+        <h3>Certificate of Appreciation</h3>
+        <p>Got Appreciation to participate in IEEE-NEXUS-2026</p>
+        <div style="text-align:right; margin-top:15px; color:#bbf246; font-size:18px; border-top:1px solid #333; padding-top:10px;">&#10230;</div>
+      </div>
+    </div>
+    <div class="card" onclick="openCert3()" style="cursor:pointer;">
+      <div class="card-content">
+        <h3>Letter of Appreciation</h3>
+        <p>Received a letter from Air Headquarters due to Extraordinary academic performance.</p>
+        <div style="text-align:right; margin-top:15px; color:#bbf246; font-size:18px; border-top:1px solid #333; padding-top:10px;">&#10230;</div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:25px;">
+    <button onclick="openAllCerts()" style="padding:12px 30px; border:2px solid #fff; background:transparent; border-radius:8px; font-size:15px; cursor:pointer; font-weight:500; color:#fff;">
+      Show More Certificates ↓
+    </button>
+  </div>
+</section>
+<!-- ===== END CERTIFICATES SECTION ===== -->
+
+<!-- ALL CERTIFICATES PAGE -->
+<div id="allCertsPage" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#1a1a2e; z-index:2000; overflow-y:auto;">
+  <div style="background:#16213e; padding:20px 40px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #444; position:sticky; top:0; z-index:10;">
+    <h2 style="margin:0; color:#fff;">All Certificates</h2>
+    <button onclick="closeAllCerts()" style="background:none; border:none; font-size:28px; cursor:pointer; color:#fff;">&times;</button>
+  </div>
+  <div style="max-width:900px; margin:40px auto; padding:0 20px; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:25px;">
+
+    <div onclick="openCert1()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="membership.png" alt="IEEE Membership" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">IEEE Membership</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Recognized as a Student member in IEEE</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert2()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="nexus.png" alt="Certificate of Appreciation" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Certificate of Appreciation</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Got Appreciation to participate in IEEE-NEXUS-2026</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert3()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="etter.png" alt="Letter of Appreciation" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Letter of Appreciation</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Received from Air Headquarters for extraordinary academic performance.</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert4()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="spark.png" alt="Certificate of Participation" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Certificate of Participation</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Participated in Spark My Future organized by IEEE</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert5()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="merit.png" alt="Certificate of Merit" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Certificate of Merit</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Awarded the Certificate of Merit for exceptional academic performance and ranking among the top students in the SSC cohort</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert6()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="silver.png" alt="Certificate of Merit" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Certificate of Appreciation-Silver Medal</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Awarded a Silver Medal in a Creative Art & Handwriting Competition, recognizing exceptional skills in visual design, precise penmanship, and artistic execution.</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert7()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="bronze.jpeg" alt="Certificate of Merit" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Certificate of Appreciation-Bronze Medal</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Secured a Bronze Medal in a Creative Art and Handwriting Competition, earning recognition for distinct aesthetic talent and technical precision.</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert8()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="green.jpeg" alt="Participation Certificate-Green Pakistan" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Participation Certificate-Green Pakistan</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Volunteered for the Green Pakistan environmental initiative, actively contributing to local reforestation and environmental sustainability efforts.</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert9()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="blind.jpeg" alt="Fundraising Certificate" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Fundraising Certificate</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Volunteered with the Pakistan Blind Association, leading fundraising initiatives to support welfare and educational programs for the visually impaired.</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert10()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="css.png" alt="Participation Certificate" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Participation Certificate</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Participated in a competitive CSS-oriented quiz, demonstrating advanced knowledge in national affairs, governance, history, and current global dynamics.</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert11()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="fare.jpeg" alt="Participation Certificate" style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Participation Certificate</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">Actively participated in organizing and delivering a memorable farewell ceremony for the graduating Batch of 2026.</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+    <div onclick="openCert12()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="start.jpg" alt="Just a start" style="width:100%; height:280px; object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px; color:#fff;">Just a start!</h3>
+        <p style="margin:0; color:#aaa; font-size:14px;">More Achievements coming soon! Inshallah!</p>
+        <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CERT OVERLAYS 1-12 -->
+<div id="certOverlay1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert1()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="membership.png" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">IEEE Membership</h2>
+      <p style="line-height:1.7; color:#ccc;">Recognized as a Student Member of the Institute of Electrical and Electronics Engineers (IEEE) — the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong>Organization:</strong> IEEE</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Membership Type:</strong> Student Member</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay2" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert2()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="nexus.png" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Certificate of Appreciation</h2>
+      <p style="line-height:1.7; color:#ccc;">Received a Certificate of Appreciation for participating in IEEE-NEXUS-2026, recognizing active involvement and contribution to one of IEEE's prominent technical events.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong>Event:</strong> IEEE-NEXUS-2026</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Issued by:</strong> IEEE</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay3" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert3()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="etter.png" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Letter of Appreciation</h2>
+      <p style="line-height:1.7; color:#ccc;">Received a formal Letter of Appreciation from Air Headquarters in recognition of extraordinary academic performance.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong>Issued by:</strong> Air Headquarters</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Reason:</strong> Extraordinary Academic Performance</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay4" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert4()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="spark.png" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Certificate of Participation</h2>
+      <p style="line-height:1.7; color:#ccc;">Received a Certificate of Participation for taking part in Spark My Future — an event organized by IEEE aimed at inspiring and empowering students.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong>Event:</strong> Spark My Future</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Organized by:</strong> IEEE</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay5" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert5()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="merit.png" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Certificate of Merit</h2>
+      <p style="line-height:1.7; color:#ccc;">Awarded the Certificate of Merit during secondary education in recognition of exceptional academic performance and ranking among the top tier of the student cohort.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Issued by:</strong> Air Headquarters - Islamabad</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay6" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert6()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="silver.png" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Certificate of Appreciation - Silver Medalist</h2>
+      <p style="line-height:1.7; color:#ccc;">Earned a Silver Medal in a competitive Creative Art & Handwriting Competition, demonstrating a high level of artistic talent, design precision, and meticulous attention to detail.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong>Event:</strong> Penmanship Competition</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Organized by:</strong> Saleem Nawaz Fazaia College Masroor</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Issued By:</strong> International HRCA Organization</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay7" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert7()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="bronze.jpeg" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Certificate of Appreciation - Bronze Medalist</h2>
+      <p style="line-height:1.7; color:#ccc;">Earned a Bronze Medal in a competitive Creative Art and Handwriting Competition, showcasing a strong aptitude for layout design, fine penmanship, and visual presentation.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong>Event:</strong> Penmanship Competition</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Organized by:</strong> Saleem Nawaz Fazaia College Masroor</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Issued By:</strong> International HRCA Organization</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay8" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert8()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="green.jpeg" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Certificate of Participation - Green Pakistan</h2>
+      <p style="line-height:1.7; color:#ccc;">Actively participated as a dedicated volunteer in the Green Pakistan campaign, contributing to large-scale tree plantation drives and environmental sustainability activities.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Organized by:</strong> Saleem Nawaz Fazaia College Masroor</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Issued By:</strong> National Green-Pakistan Organization</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay9" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert9()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="blind.jpeg" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Fundraising Certificate</h2>
+      <p style="line-height:1.7; color:#ccc;">Served as a dedicated volunteer for the Pakistan Blind Association, actively organizing and driving community fundraising campaigns to support empowering initiatives for visually impaired individuals.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Organized by:</strong> Saleem Nawaz Fazaia College Masroor</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Issued By:</strong> Pakistan Blind Association</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay10" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert10()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="css.png" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Participation Certificate</h2>
+      <p style="line-height:1.7; color:#ccc;">Actively engaged in a rigorous CSS-oriented quiz competition designed to evaluate comprehensive knowledge across national governance, international relations, history, and current affairs.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Organized by:</strong> CSS CLUB-KFUEIT</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay11" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert11()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="fare.jpeg" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Participation Certificate</h2>
+      <p style="line-height:1.7; color:#ccc;">Contributed significantly to the execution and presentation of the official farewell ceremony hosted for the graduating Batch of 2026.</p>
+      <div style="margin-top:20px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:8px 0 0; color:#ccc;"><strong>Organized by:</strong> IEEE-KFUEIT</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="certOverlay12" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeCert12()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px 30px 0;"><img src="start.jpg" style="width:100%; height:auto; display:block; border-radius:8px;"></div>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 15px;">Just a Start!</h2>
+      <p style="line-height:1.7; color:#ccc;">More achievements coming soon! Inshallah! This is only the beginning of a long journey of excellence and growth.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openAllCerts(){ document.getElementById('allCertsPage').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeAllCerts(){ document.getElementById('allCertsPage').style.display='none'; document.body.style.overflow='auto'; }
+  function openCert1(){ document.getElementById('certOverlay1').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert1(){ document.getElementById('certOverlay1').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay1').addEventListener('click',function(e){ if(e.target===this) closeCert1(); });
+  function openCert2(){ document.getElementById('certOverlay2').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert2(){ document.getElementById('certOverlay2').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay2').addEventListener('click',function(e){ if(e.target===this) closeCert2(); });
+  function openCert3(){ document.getElementById('certOverlay3').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert3(){ document.getElementById('certOverlay3').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay3').addEventListener('click',function(e){ if(e.target===this) closeCert3(); });
+  function openCert4(){ document.getElementById('certOverlay4').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert4(){ document.getElementById('certOverlay4').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay4').addEventListener('click',function(e){ if(e.target===this) closeCert4(); });
+  function openCert5(){ document.getElementById('certOverlay5').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert5(){ document.getElementById('certOverlay5').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay5').addEventListener('click',function(e){ if(e.target===this) closeCert5(); });
+  function openCert6(){ document.getElementById('certOverlay6').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert6(){ document.getElementById('certOverlay6').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay6').addEventListener('click',function(e){ if(e.target===this) closeCert6(); });
+  function openCert7(){ document.getElementById('certOverlay7').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert7(){ document.getElementById('certOverlay7').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay7').addEventListener('click',function(e){ if(e.target===this) closeCert7(); });
+  function openCert8(){ document.getElementById('certOverlay8').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert8(){ document.getElementById('certOverlay8').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay8').addEventListener('click',function(e){ if(e.target===this) closeCert8(); });
+  function openCert9(){ document.getElementById('certOverlay9').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert9(){ document.getElementById('certOverlay9').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay9').addEventListener('click',function(e){ if(e.target===this) closeCert9(); });
+  function openCert10(){ document.getElementById('certOverlay10').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert10(){ document.getElementById('certOverlay10').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay10').addEventListener('click',function(e){ if(e.target===this) closeCert10(); });
+  function openCert11(){ document.getElementById('certOverlay11').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert11(){ document.getElementById('certOverlay11').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay11').addEventListener('click',function(e){ if(e.target===this) closeCert11(); });
+  function openCert12(){ document.getElementById('certOverlay12').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeCert12(){ document.getElementById('certOverlay12').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('certOverlay12').addEventListener('click',function(e){ if(e.target===this) closeCert12(); });
+</script>
+
+
+<!-- ===== PROJECTS SECTION ===== -->
+<section id="projects">
+  <div class="section-title">
+    <h2>My Projects</h2>
+    <p>Things I have built</p>
+  </div>
+
+  <div class="grid">
+    <div class="card" onclick="openProject1()" style="cursor:pointer;">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+        <h3>Dual Mode Alert & Indication System</h3>
+        <p>Made an alert & indication system using BC547 Transistors.</p>
+      <div style="text-align:right; margin-top:15px; color:#bbf246; font-size:18px; border-top:1px solid #333; padding-top:10px;">&#10230;</div>
+      </div>
+    </div>
+    <div class="card" onclick="openProject2()" style="cursor:pointer;">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-car-battery"></i></div>
+        <h3>Automated Obstacle Tracking and Ranging System</h3>
+        <p>Designed and built an embedded radar system for real-time object tracking.</p>
+       <div style="text-align:right; margin-top:15px; color:#bbf246; font-size:18px; border-top:1px solid #333; padding-top:10px;">&#10230;</div>
+      </div>
+    </div>
+    <div class="card" onclick="openProject3()" style="cursor:pointer;">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-satellite-dish"></i></div>
+        <h3>Electricity Bill Management System</h3>
+        <p>Developed a console-based Electricity Bill Management System using C++.</p>
+        <div style="text-align:right; margin-top:15px; color:#bbf246; font-size:18px; border-top:1px solid #333; padding-top:10px;">&#10230;</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:25px;">
+    <button onclick="openAllProjects()" style="padding:12px 30px; border:2px solid #fff; background:transparent; border-radius:8px; font-size:15px; cursor:pointer; font-weight:500; color:#fff;">
+      View More Projects ↓
+    </button>
+  </div>
+
+</section>
+<!-- ===== END PROJECTS SECTION ===== -->
+
+<!-- ALL PROJECTS PAGE -->
+<div id="allProjectsPage" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#1a1a2e; z-index:2000; overflow-y:auto;">
+  <div style="background:#16213e; padding:20px 40px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #444; position:sticky; top:0; z-index:10;">
+    <h2 style="margin:0; color:#fff;">All Projects</h2>
+    <button onclick="closeAllProjects()" style="background:none; border:none; font-size:28px; cursor:pointer; color:#fff;">&times;</button>
+  </div>
+  <div style="max-width:900px; margin:40px auto; padding:0 20px; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:25px;">
+
+    <div onclick="openProject1()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="dual.png" alt="Dual Mode Alert" style="width:100%; height:180px; object-fit:center;">
+      <div style="padding:15px;"><h3 style="margin:0 0 8px; color:#fff;">Dual Mode Alert & Indication System</h3><p style="margin:0; color:#aaa; font-size:14px;">Alert & indication system using BC547 Transistors</p></div>
+      <div style="text-align:center; margin-top:25px; color:#bbf246; font-size:14px; font-weight:600; border-top:1px solid #333; padding-top:15px;">View Details</div>
+</div>
+
+    <div onclick="openProject2()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="r1.png" alt="Obstacle Tracking" style="width:100%; height:180px; object-fit:center;">
+      <div style="padding:15px;"><h3 style="margin:0 0 8px; color:#fff;">Automated Obstacle Tracking and Ranging System</h3><p style="margin:0; color:#aaa; font-size:14px;">Embedded radar system for real-time object tracking</p></div>
+    <div style="text-align:center; margin-top:25px; color:#bbf246; font-size:14px; font-weight:600; border-top:1px solid #333; padding-top:15px;">View Details</div>
+</div>
+
+    <div onclick="openProject3()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <video style="width:100%; height:180px; object-fit:cover; background:#000;" muted><source src="c+.mp4" type="video/mp4"></video>
+      <div style="padding:15px;"><h3 style="margin:0 0 8px; color:#fff;">Electricity Bill Management System</h3><p style="margin:0; color:#aaa; font-size:14px;">Console-based billing system using C++</p></div>
+    <div style="text-align:center; margin-top:25px; color:#bbf246; font-size:14px; font-weight:600; border-top:1px solid #333; padding-top:15px;">View Details</div>
+</div>
+
+    <div onclick="openProject4()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+      <img src="ne555.png" alt="Digital PRING" style="width:100%; height:180px; object-fit:center;">
+      <div style="padding:15px;"><h3 style="margin:0 0 8px; color:#fff;">Digital PRING</h3><p style="margin:0; color:#aaa; font-size:14px;">NE555 timer, 74LS163 counter & 7-segment display</p></div>
+    <div style="text-align:center; margin-top:25px; color:#bbf246; font-size:14px; font-weight:600; border-top:1px solid #333; padding-top:15px;">View Details</div>
+</div>
+<div onclick="openProject5()" style="background:#16213e; border-radius:12px; overflow:hidden; cursor:pointer; border:1px solid #444;">
+  <img src="quiz.png" alt="Quiz Buzzer" style="width:100%; height:180px; object-fit:center;">
+  <div style="padding:15px;">
+    <h3 style="margin:0 0 8px; color:#fff;">Quiz Buzzer System</h3>
+    <p style="margin:0; color:#aaa; font-size:14px;">Transistor and latch based quiz buzzer circuit</p>
+    <div style="text-align:center; margin-top:12px; color:#bbf246; font-size:13px; font-weight:600; border-top:1px solid #333; padding-top:10px;">View Details</div>
+ 
+ </div>
+</div>
+
+<div style="background:#16213e; border-radius:12px; overflow:hidden; border:1px solid #444;">
+  <img src="start.jpg" alt="More Projects" style="width:100%; height:180px; object-fit:center;">
+  <div style="padding:15px;">
+    <h3 style="margin:0 0 8px; color:#fff;">Just a Start!</h3>
+    <p style="margin:0; color:#aaa; font-size:14px;">More projects coming soon. Inshallah!</p>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- PROJECT OVERLAYS -->
+<div id="projectOverlay1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeProject1()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:4px;">
+      <img src="dual.png" style="width:100%; height:150px; object-fit:center;">
+      <img src="d1.jpeg" style="width:100%; height:150px; object-fit:center;">
+      <img src="d2.png" style="width:100%; height:150px; object-fit:center;">
+    </div>
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px;">
+        <i class="fa-solid fa-microchip" style="font-size:24px;"></i>
+        <h2 style="margin:0;">Dual Mode Alert & Indication System</h2>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">Introduction</h4>
+      <p style="line-height:1.7; color:#ccc;">This project is a dual mode alert and indication system built using BC547 NPN transistors. It can operate in two distinct modes — visual indication using LEDs and audio alert using a buzzer.</p>
+      <h4 style="margin-top:20px; color:#bbf246;">Components Required</h4>
+      <ul style="line-height:2; color:#ccc;"><li>BC547 NPN Transistors</li><li>LEDs</li><li>Buzzer</li><li>Resistors</li><li>Power Supply</li></ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Methodology</h4>
+      <p style="line-height:1.7; color:#ccc;">The BC547 transistor is used as a switch. When the input signal is applied to the base, the transistor turns on and activates either the LED or the buzzer depending on the mode selected.</p>
+      <h4 style="margin-top:20px; color:#bbf246;">Conclusion</h4>
+      <p style="line-height:1.7; color:#ccc;">The system successfully demonstrates the use of BC547 transistors as switching elements in practical alert circuits. Low-cost, easy to build, and adaptable for real-world warning systems.</p>
+      
+</div>
+  </div>
+</div>
+
+<div id="projectOverlay2" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeProject2()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+      <img src="r3.png" style="width:100%; height:300px; object-fit:center;">
+      <img src="r1.png" style="width:100%; height:300px; object-fit:center;">
+      <img src="r2.png" style="width:100%; height:350px; object-fit:center; grid-column:1/3; justify-self:center;">
+    </div>
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px;">
+        <i class="fa-solid fa-car-battery" style="font-size:24px;"></i>
+        <h2 style="margin:0;">Automated Obstacle Tracking and Ranging System</h2>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">Introduction</h4>
+      <p style="line-height:1.7; color:#ccc;">Designed and built an embedded radar system for real-time object tracking and spatial mapping using Arduino, ultrasonic sensor and servo motor.</p>
+      <h4 style="margin-top:20px; color:#bbf246;">Components Required</h4>
+      <ul style="line-height:2; color:#ccc;"><li>Arduino Microcontroller</li><li>Ultrasonic Sensor (HC-SR04)</li><li>Servo Motor</li><li>Serial Communication Interface</li><li>Custom GUI for live tracking</li></ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Methodology</h4>
+      <p style="line-height:1.7; color:#ccc;">The servo motor rotates the ultrasonic sensor across a 180° arc. At each angle, the sensor measures distance to any object in front of it. Data is transmitted via serial communication to a PC-based GUI displaying a radar-style view.</p>
+      <h4 style="margin-top:20px; color:#bbf246;">Conclusion</h4>
+      <p style="line-height:1.7; color:#ccc;">The system successfully demonstrated real-time obstacle detection and spatial mapping using low-cost components.</p>
+      
+</div>
+  </div>
+</div>
+
+<div id="projectOverlay3" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeProject3()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <video controls style="width:100%; height:300px; object-fit:cover; background:#000;"><source src="c+.mp4" type="video/mp4"></video>
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px;">
+        <i class="fa-solid fa-satellite-dish" style="font-size:24px;"></i>
+        <h2 style="margin:0;">Electricity Bill Management System</h2>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">Introduction</h4>
+      <p style="line-height:1.7; color:#ccc;">Developed a console-based Electricity Bill Management System using C++. Handles complete customer billing operations including record management, automated bill calculation based on unit slabs, and file-based data storage.</p>
+      <h4 style="margin-top:20px; color:#bbf246;">Components Required</h4>
+      <ul style="line-height:2; color:#ccc;"><li>C++ Programming Language</li><li>File Handling (fstream)</li><li>Console-Based Interface</li><li>Slab-Based Billing Logic</li></ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Conclusion</h4>
+      <p style="line-height:1.7; color:#ccc;">Demonstrates effective use of file handling and structured programming in C++. Can be extended with a GUI or database integration in future.</p>
+      
+</div>
+  </div>
+</div>
+
+<div id="projectOverlay4" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeProject4()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+      <img src="ne555.png" style="width:100%; height:220px; object-fit:center;">
+      <img src="ne557.png" style="width:100%; height:220px; object-fit:cover;">
+      <img src="ne556.png" style="width:100%; height:390px; object-fit:cover; grid-column:1/3; justify-self:center;">
+    </div>
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px;">
+        <i class="fa-solid fa-satellite-dish" style="font-size:24px;"></i>
+        <h2 style="margin:0;">Digital PRING</h2>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">Introduction</h4>
+      <p style="line-height:1.7; color:#ccc;">Designed and simulated a Digital PRING using the NE555 timer IC, 74LS163 counter, 74LS47 BCD-to-7-segment decoder, logic gates, and a 7-segment display in Proteus.</p>
+      <h4 style="margin-top:20px; color:#bbf246;">Components Required</h4>
+      <ul style="line-height:2; color:#ccc;"><li>NE555 Timer IC</li><li>74LS163 Counter IC</li><li>74LS47 Decoder IC</li><li>Logic Gates</li><li>7-Segment Display</li><li>Proteus Design Suite</li></ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Conclusion</h4>
+      <p style="line-height:1.7; color:#ccc;">Successfully demonstrates the integration of timer, counter, and decoder ICs to produce a functional digital display circuit.</p>
+    
+</div>
+  </div>
+</div>
+<div id="projectOverlay5" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeProject5()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+
+    <img src="quiz.png" style="width:100%; height:250px; object-fit:center;">
+
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px;">
+        <i class="fa-solid fa-question" style="font-size:24px;"></i>
+        <h2 style="margin:0;">Quiz Buzzer System</h2>
+      </div>
+
+      <h4 style="margin-top:20px; color:#bbf246;">Introduction</h4>
+      <p style="line-height:1.7; color:#ccc;">Designed and built a Quiz Buzzer System using transistors and latch circuits. The system allows multiple players to compete, where the first player to press their button locks out all others — ensuring fair and instant response detection.</p>
+
+      <h4 style="margin-top:20px; color:#bbf246;">Components Required</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>BC547 NPN Transistors</li>
+        <li>SR Latch Circuit</li>
+        <li>Push Buttons</li>
+        <li>LEDs</li>
+        <li>Resistors</li>
+        <li>Power Supply</li>
+      </ul>
+
+      <h4 style="margin-top:20px; color:#bbf246;">Methodology</h4>
+      <p style="line-height:1.7; color:#ccc;">When a player presses their button, the transistor triggers and the latch circuit locks the output, lighting up that player's LED and disabling all other inputs. The latch holds the state until manually reset, ensuring only the first press is registered.</p>
+
+      <h4 style="margin-top:20px; color:#bbf246;">Conclusion</h4>
+      <p style="line-height:1.7; color:#ccc;">The Quiz Buzzer System successfully demonstrates the use of transistors and latch logic in a practical real-world application. It is reliable, fast-responding, and easily expandable to support more players.</p>
+    </div>
+  </div>
+</div>
+<script>
+  function openAllProjects(){ document.getElementById('allProjectsPage').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeAllProjects(){ document.getElementById('allProjectsPage').style.display='none'; document.body.style.overflow='auto'; }
+  function openProject1(){ document.getElementById('projectOverlay1').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeProject1(){ document.getElementById('projectOverlay1').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('projectOverlay1').addEventListener('click',function(e){ if(e.target===this) closeProject1(); });
+  function openProject2(){ document.getElementById('projectOverlay2').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeProject2(){ document.getElementById('projectOverlay2').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('projectOverlay2').addEventListener('click',function(e){ if(e.target===this) closeProject2(); });
+  function openProject3(){ document.getElementById('projectOverlay3').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeProject3(){ document.getElementById('projectOverlay3').style.display='none'; document.body.style.overflow='auto'; document.querySelector('#projectOverlay3 video').pause(); }
+  document.getElementById('projectOverlay3').addEventListener('click',function(e){ if(e.target===this) closeProject3(); });
+  function openProject4(){ document.getElementById('projectOverlay4').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeProject4(){ document.getElementById('projectOverlay4').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('projectOverlay4').addEventListener('click',function(e){ if(e.target===this) closeProject4(); });
+  function openProject5(){ document.getElementById('projectOverlay5').style.display='block'; document.body.style.overflow='hidden'; }
+function closeProject5(){ document.getElementById('projectOverlay5').style.display='none'; document.body.style.overflow='auto'; }
+document.getElementById('projectOverlay5').addEventListener('click',function(e){ if(e.target===this) closeProject5(); });
+</script>
+
+
+<!-- ===== SKILLS SECTION ===== -->
+<section id="skills">
+  <div class="section-title">
+    <h2>Technical Skills</h2>
+    <p>Engineering Tools & Technologies</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Electrical Engineering</h3>
+        <p>Circuit Analysis, Power Electronics, Instrumentation and Control Systems.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Programming</h3>
+        <p>C++, Arduino Programming, Embedded C and Frontend Web Development.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-memory"></i></div>
+        <h3>Embedded Systems</h3>
+        <p>ESP32, Arduino, Sensors, IoT Systems and PCB Designing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== END SKILLS SECTION ===== -->
+
+
+<!-- ===== EXPERIENCE SECTION ===== -->
+<section id="experience">
+  <div class="section-title">
+    <h2>Experience</h2>
+    <p>My Professional Journey</p>
+  </div>
+  <div class="grid">
+    <div class="card" onclick="openExp1()" style="cursor:pointer; grid-column:1/-1;">
+      <div class="card-content">
+        <h3>Undergraduate Student</h3>
+        <p style="color:#bbf246; font-weight:500; margin:5px 0;">Khawaja Fareed University of Engineering & Information Technology (KFUEIT) — Rahim Yar Khan</p>
+        <p style="margin:5px 0; color:#aaa;">2025 — Present</p>
+        <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:22px; font-weight:bold; border-top:1px solid #333; padding-top:10px;">&#8594; Click to View Details</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== END EXPERIENCE SECTION ===== -->
+
+<!-- EXP OVERLAY 1 -->
+<div id="expOverlay1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeExp1()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 5px; color:#fff;">Undergraduate Student</h2>
+      <p style="color:#bbf246; font-weight:500; margin:0 0 5px;">KFUEIT — Rahim Yar Khan</p>
+      <p style="color:#aaa; margin:0 0 25px;">2025 — Present</p>
+      <div style="padding:15px; background:#0f3460; border-radius:8px; margin-bottom:20px;">
+        <p style="margin:0; color:#ccc;"><strong style="color:#fff;">Degree:</strong> Bachelor of Engineering (Electrical)</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Specialization:</strong> Power & Electronics</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Current CGPA:</strong> 3.89 / 4.0</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Status:</strong> In Progress</p>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">What I Learned</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Embedded Systems design and programming using Arduino and microcontrollers</li>
+        <li>Circuit design, PCB layout and simulation using Proteus</li>
+        <li>C / C++ and Python programming for hardware and software integration</li>
+        <li>Digital and Analog Electronics fundamentals</li>
+        <li>IoT systems and smart device development</li>
+        <li>Signals, Systems and Communication principles</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Experiential Learning</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Built a Dual Mode Alert & Indication System using BC547 transistors</li>
+        <li>Designed an Automated Obstacle Tracking and Ranging System using Arduino</li>
+        <li>Simulated a Digital PRING circuit with NE555 timer in Proteus</li>
+        <li>Developed a console-based Electricity Bill Management System in C++</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Campus Involvement</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Active IEEE Student Member</li>
+        <li>Participated in IEEE-NEXUS-2026 and received Certificate of Appreciation</li>
+        <li>Engaged in technical workshops and seminars on campus</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Academic Achievements</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Received Letter of Appreciation from Air Headquarters for extraordinary academic performance</li>
+        <li>Maintaining strong CGPA throughout the degree program</li>
+        <li>Recognized as IEEE Student Member for technical contributions</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openExp1(){ document.getElementById('expOverlay1').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeExp1(){ document.getElementById('expOverlay1').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('expOverlay1').addEventListener('click',function(e){ if(e.target===this) closeExp1(); });
+</script>
+
+
+<!-- ===== VOLUNTEER SECTION ===== -->
+<section id="volunteer">
+  <div class="section-title">
+    <h2>Volunteer Services</h2>
+    <p>Giving Back to the Community</p>
+  </div>
+  <div class="grid">
+    <div class="card" onclick="openVol1()" style="cursor:pointer;">
+      <div class="card-content">
+        <h3>House Captain — Student Representative Council</h3>
+        <p style="color:#bbf246; font-weight:500; margin:5px 0;">Saleem Nawaz Fazaia College Masroor-13 - Karachi</p>
+        <p style="margin:5px 0; color:#aaa;">2023</p>
+        <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:22px; font-weight:bold; border-top:1px solid #333; padding-top:10px;">&#8594; Click to View Details</div>
+      </div>
+    </div>
+    <div class="card" onclick="openVol2()" style="cursor:pointer;">
+      <div class="card-content">
+        <h3>Secretary — IEEE Student Branch</h3>
+        <p style="color:#bbf246; font-weight:500; margin:5px 0;">IEEE-SB-KFUEIT</p>
+        <p style="color:#bbf246; font-weight:500; margin:5px 0;">Rahim Yar Khan, Punjab</p>
+        <p style="margin:5px 0; color:#aaa;">2026 — Present</p>
+        <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:22px; font-weight:bold; border-top:1px solid #333; padding-top:10px;">&#8594; Click to View Details</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== END VOLUNTEER SECTION ===== -->
+
+<!-- VOL OVERLAY 1 -->
+<div id="volOverlay1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeVol1()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 5px; color:#fff;">House Captain</h2>
+      <p style="color:#bbf246; font-weight:500; margin:0 0 5px;">Student Representative Council</p>
+      <p style="color:#aaa; margin:0 0 25px;">2023</p>
+      <div style="padding:15px; background:#0f3460; border-radius:8px; margin-bottom:20px;">
+        <p style="margin:0; color:#ccc;"><strong style="color:#fff;">Role Title:</strong> House Captain</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Location:</strong> Saleem Nawaz Fazaia College PAF Base Masroor-13, Karachi</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Type:</strong> Volunteer / Leadership Role</p>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">Key Achievements</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Led the house team in inter-house competitions and events</li>
+        <li>Organized and coordinated multiple school activities successfully</li>
+        <li>Represented the house in school council meetings</li>
+        <li>Motivated and united students under a common goal</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Skills Used</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Leadership and team management</li>
+        <li>Public speaking and communication</li>
+        <li>Event planning and coordination</li>
+        <li>Problem solving and decision making</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- VOL OVERLAY 2 -->
+<div id="volOverlay2" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeVol2()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <h2 style="margin:0 0 5px; color:#fff;">Secretary</h2>
+      <p style="color:#bbf246; font-weight:500; margin:0 0 5px;">IEEE Student Branch — KFUEIT</p>
+      <p style="color:#aaa; margin:0 0 25px;">2026 — Present</p>
+      <div style="padding:15px; background:#0f3460; border-radius:8px; margin-bottom:20px;">
+        <p style="margin:0; color:#ccc;"><strong style="color:#fff;">Role Title:</strong> Secretary</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Organization:</strong> IEEE Student Branch KFUEIT</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Location:</strong> KFUEIT, Rahim Yar Khan</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Type:</strong> Volunteer / Leadership Role</p>
+      </div>
+      <h4 style="margin-top:20px; color:#bbf246;">Key Achievements</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Successfully managed branch documentation and official correspondence</li>
+        <li>Coordinated IEEE events including IEEE-NEXUS-2026 and Spark My Future</li>
+        <li>Maintained and updated branch records and meeting minutes</li>
+        <li>Helped grow student membership and engagement in IEEE activities</li>
+      </ul>
+      <h4 style="margin-top:20px; color:#bbf246;">Duties & Responsibilities</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Managing official branch correspondence and documentation</li>
+        <li>Recording and distributing meeting minutes to all members</li>
+        <li>Coordinating logistics for branch events and workshops</li>
+        <li>Supporting the branch chair in day-to-day administrative tasks</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openVol1(){ document.getElementById('volOverlay1').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeVol1(){ document.getElementById('volOverlay1').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('volOverlay1').addEventListener('click',function(e){ if(e.target===this) closeVol1(); });
+  function openVol2(){ document.getElementById('volOverlay2').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeVol2(){ document.getElementById('volOverlay2').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('volOverlay2').addEventListener('click',function(e){ if(e.target===this) closeVol2(); });
+</script>
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services">
+  <div class="section-title">
+    <h2>My Services</h2>
+    <p>What I Can Do For You</p>
+  </div>
+  <div class="grid">
+
+    <div class="card" onclick="openService1()" style="cursor:pointer;">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+        <h3>PCB Designing</h3>
+        <p>Professional PCB layout design and simulation using Proteus.</p>
+        <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:14px; font-weight:600; border-top:1px solid #333; padding-top:12px; letter-spacing:1px;">
+  View Details &nbsp;&#10230;
+</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openService2()" style="cursor:pointer;">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+        <h3>Web Development & Programming</h3>
+        <p>Building modern websites and solving programming tasks using intelligent development tools.</p>
+        <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:14px; font-weight:600; border-top:1px solid #333; padding-top:12px; letter-spacing:1px;">
+  View Details &nbsp;&#10230;
+</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openService3()" style="cursor:pointer;">
+      <div class="card-content">
+        <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Electronics Projects</h3>
+        <p>Designing and building real-world electronics and embedded systems projects.</p>
+        <div style="text-align:center; margin-top:15px; color:#bbf246; font-size:14px; font-weight:600; border-top:1px solid #333; padding-top:12px; letter-spacing:1px;">
+  View Details &nbsp;&#10230;
+</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ===== END SERVICES SECTION ===== -->
+
+
+<!-- SERVICE OVERLAY 1 - PCB Designing -->
+<div id="serviceOverlay1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeService1()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+        <h2 style="margin:0; color:#fff;">PCB Designing</h2>
+      </div>
+      <p style="line-height:1.8; color:#ccc;">I provide professional PCB design services using industry-standard tools. From schematic to final layout, I ensure clean, efficient, and manufacturable PCB designs tailored to your project needs.</p>
+      <h4 style="margin-top:25px; color:#bbf246;">What's Included</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Schematic design and component selection</li>
+        <li>PCB layout and routing</li>
+        <li>Design Rule Check (DRC) verification</li>
+        <li>Proteus simulation before manufacturing</li>
+        <li>Gerber file generation for production</li>
+      </ul>
+      <h4 style="margin-top:25px; color:#bbf246;">Tools Used</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Proteus Design Suite</li>
+        <li>Multisim</li>
+        <li>KiCad</li>
+      </ul>
+      <div style="margin-top:25px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong style="color:#fff;">Delivery:</strong> Based on project complexity</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Contact:</strong> Reach out via the contact form below</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SERVICE OVERLAY 2 - Web Development -->
+<div id="serviceOverlay2" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeService2()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+        <h2 style="margin:0; color:#fff;">Web Development & Programming</h2>
+      </div>
+      <p style="line-height:1.8; color:#ccc;">I build modern, responsive websites and handle programming tasks using the latest AI-assisted development techniques. Whether you need a personal portfolio, a business site, or a custom coding solution, I deliver clean and functional results.</p>
+      <h4 style="margin-top:25px; color:#bbf246;">What's Included</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Responsive HTML, CSS and JavaScript websites</li>
+        <li>Portfolio and personal websites</li>
+        <li>C++ and Python programming tasks</li>
+        <li>Arduino and embedded code writing</li>
+        <li>AI-assisted development for faster delivery</li>
+      </ul>
+      <h4 style="margin-top:25px; color:#bbf246;">Tools Used</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>HTML / CSS / JavaScript</li>
+        <li>C++ / Python</li>
+        <li>AI Development Tools</li>
+      </ul>
+      <div style="margin-top:25px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong style="color:#fff;">Delivery:</strong> Based on project complexity</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Contact:</strong> Reach out via the contact form below</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SERVICE OVERLAY 3 - Electronics Projects -->
+<div id="serviceOverlay3" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:3000; overflow-y:auto;">
+  <div style="background:#16213e; max-width:700px; margin:60px auto; border-radius:12px; overflow:hidden; position:relative;">
+    <button onclick="closeService3()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:10;">&times;</button>
+    <div style="padding:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+        <h2 style="margin:0; color:#fff;">Electronics Projects</h2>
+      </div>
+      <p style="line-height:1.8; color:#ccc;">I design and build custom electronics and embedded systems projects from scratch. Whether it's a university project, a prototype, or a real-world automation solution, I handle the full process from concept to working model.</p>
+      <h4 style="margin-top:25px; color:#bbf246;">What's Included</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Arduino and ESP32 based projects</li>
+        <li>Sensor integration and IoT systems</li>
+        <li>Circuit design and hardware prototyping</li>
+        <li>Automation and control systems</li>
+        <li>Complete project report and documentation</li>
+      </ul>
+      <h4 style="margin-top:25px; color:#bbf246;">Tools Used</h4>
+      <ul style="line-height:2; color:#ccc;">
+        <li>Arduino / ESP32</li>
+        <li>Proteus Simulation</li>
+        <li>Embedded C / C++</li>
+      </ul>
+      <div style="margin-top:25px; padding:15px; background:#0f3460; border-radius:8px;">
+        <p style="margin:0; color:#ccc;"><strong style="color:#fff;">Delivery:</strong> Based on project complexity</p>
+        <p style="margin:8px 0 0; color:#ccc;"><strong style="color:#fff;">Contact:</strong> Reach out via the contact form below</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SERVICES SCRIPT -->
+<script>
+  function openService1(){ document.getElementById('serviceOverlay1').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeService1(){ document.getElementById('serviceOverlay1').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('serviceOverlay1').addEventListener('click',function(e){ if(e.target===this) closeService1(); });
+
+  function openService2(){ document.getElementById('serviceOverlay2').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeService2(){ document.getElementById('serviceOverlay2').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('serviceOverlay2').addEventListener('click',function(e){ if(e.target===this) closeService2(); });
+
+  function openService3(){ document.getElementById('serviceOverlay3').style.display='block'; document.body.style.overflow='hidden'; }
+  function closeService3(){ document.getElementById('serviceOverlay3').style.display='none'; document.body.style.overflow='auto'; }
+  document.getElementById('serviceOverlay3').addEventListener('click',function(e){ if(e.target===this) closeService3(); });
+</script>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <p>Let's build innovative engineering projects together.</p>
+
+  <div style="display:flex; gap:16px; align-items:center; justify-content:center;">
+    <a href="https://www.linkedin.com/in/azeem-haider-8098903b8" target="_blank" aria-label="LinkedIn"
+       style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:8px; border:1px solid #ddd; color:#fff; text-decoration:none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+      </svg>
+    </a>
+    <a href="https://github.com/AzeemHaider10" target="_blank" aria-label="GitHub"
+       style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:8px; border:1px solid #ddd; color:#fff; text-decoration:none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/azeeminsaan/" target="_blank" aria-label="Instagram"
+       style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:8px; border:1px solid #ddd; color:#fff; text-decoration:none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+    </a>
+  <a href="https://wa.me/923083076005" target="_blank" aria-label="WhatsApp"
+   style="display:flex; align-items:center; justify-content:center; width:44px; height:44px;
+          border-radius:8px; border:1px solid #ddd; color:#fff; text-decoration:none;">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15
+             -.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475
+             -.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52
+             .149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207
+             -.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372
+             -.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2
+             5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085
+             1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.845L.057 23.572
+             a.5.5 0 0 0 .614.612l5.796-1.457A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373
+             12-12S18.627 0 12 0zm0 22a9.948 9.948 0 0 1-5.187-1.448l-.372-.22-3.864.97
+             .99-3.77-.242-.388A9.95 9.95 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10
+             -4.477 10-10 10z"/>
+  </svg>
+</a>
+  </div>
+
+  <!-- Contact Form -->
+  <div style="max-width:500px; margin:40px auto; padding:20px;">
+    <h2 style="text-align:center;">Any Queries? Contact Me</h2>
+    <input id="name" type="text" placeholder="Your Name" style="width:100%; padding:10px; margin-bottom:12px; border:1px solid #444; border-radius:8px; box-sizing:border-box; background:#111; color:#fff;">
+    <input id="email" type="email" placeholder="Your Email" style="width:100%; padding:10px; margin-bottom:12px; border:1px solid #444; border-radius:8px; box-sizing:border-box; background:#111; color:#fff;">
+    <textarea id="message" placeholder="Your Message" rows="5" style="width:100%; padding:10px; margin-bottom:12px; border:1px solid #444; border-radius:8px; box-sizing:border-box; background:#111; color:#fff;"></textarea>
+    <button onclick="sendEmail()" style="width:100%; padding:12px; background:#d8ff1e; color:black; border:none; border-radius:8px; cursor:pointer; font-weight:700; font-size:16px;">Send Message</button>
+    <p id="status" style="text-align:center; margin-top:10px;"></p>
+  </div>
+
+</section>
+<!-- ===== END CONTACT SECTION ===== -->
+
+<footer>
+  © 2026 Azeem Haider | Portfolio | All Rights Reserved
+</footer>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("mK8T0vRu-Qy6LE8-F");
+  function sendEmail() {
+    const params = {
+      from_name:  document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      message:    document.getElementById("message").value,
+    };
+    emailjs.send("service_1wjuv6z", "template_l3192uo", params)
+      .then(() => { document.getElementById("status").innerText = "✅ Message sent!"; })
+      .catch(() => { document.getElementById("status").innerText = "❌ Failed. Try again."; });
+  }
+</script>
+
+</body>
+</html>
